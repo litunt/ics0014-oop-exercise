@@ -98,5 +98,11 @@ public class Accountant {
         return new HashMap<>();
     }
 
-
+    /**
+     * Method should count and return the percentage difference between the lowest
+     * and the highest salaries (how much is the highest salary is higher than the lowest).
+     */
+    public double getPercentageDiffBetweenMinAndMaxSalaries() {
+        return 0.00;
+    }
 }
