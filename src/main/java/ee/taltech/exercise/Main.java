@@ -1,5 +1,6 @@
 package ee.taltech.exercise;
 
+import ee.taltech.exercise.accountant.Accountant;
 import ee.taltech.exercise.company.Company;
 import ee.taltech.exercise.company.Employee;
 import ee.taltech.exercise.generator.Generator;
@@ -16,9 +17,11 @@ public class Main {
             Company company = new Company("MyCompany");
             company.addAllEmployees(employeeList);
 
-            // continue with Accountant methods
+            Accountant accountant = new Accountant(company);
+            //todo continue with Accountant methods
+            // maybe write some tests?
         } catch (IOException | URISyntaxException e) {
-            System.out.println("...");
+            System.out.println("..." + e.getMessage());
         }
     }
 }

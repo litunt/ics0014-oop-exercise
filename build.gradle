@@ -16,6 +16,8 @@ repositories {
 dependencies {
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: "${junit_version}"
     testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: "${junit_version}"
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: "${assertj_version}"
+
 }
 
 test {
